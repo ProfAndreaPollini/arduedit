@@ -1,0 +1,267 @@
+{
+    "pinMode": {
+        "firma": "void pinMode(int pin, int mode)",
+        "descrizione": "Configura un pin come INPUT, OUTPUT o INPUT_PULLUP.",
+        "categoria": "I/O digitale"
+    },
+    "digitalWrite": {
+        "firma": "void digitalWrite(int pin, int state)",
+        "descrizione": "Scrive HIGH o LOW su un pin digitale.",
+        "categoria": "I/O digitale"
+    },
+    "digitalRead": {
+        "firma": "int digitalRead(int pin)",
+        "descrizione": "Legge lo stato di un pin digitale (HIGH o LOW).",
+        "categoria": "I/O digitale"
+    },
+    "analogRead": {
+        "firma": "int analogRead(int pin)",
+        "descrizione": "Legge un valore analogico (0-1023 su Arduino Uno).",
+        "categoria": "I/O analogico"
+    },
+    "analogWrite": {
+        "firma": "void analogWrite(int pin, int value)",
+        "descrizione": "Scrive un valore PWM (0-255) su un pin compatibile.",
+        "categoria": "I/O analogico"
+    },
+    "analogReadResolution": {
+        "firma": "void analogReadResolution(int bits)",
+        "descrizione": "Imposta la risoluzione dell'ADC (solo schede a 32 bit).",
+        "categoria": "I/O analogico"
+    },
+    "delay": {
+        "firma": "void delay(unsigned long ms)",
+        "descrizione": "Sospende l'esecuzione per N millisecondi.",
+        "categoria": "Tempo"
+    },
+    "delayMicroseconds": {
+        "firma": "void delayMicroseconds(unsigned int us)",
+        "descrizione": "Sospende l'esecuzione per N microsecondi.",
+        "categoria": "Tempo"
+    },
+    "millis": {
+        "firma": "unsigned long millis()",
+        "descrizione": "Restituisce i millisecondi trascorsi dall'avvio.",
+        "categoria": "Tempo"
+    },
+    "micros": {
+        "firma": "unsigned long micros()",
+        "descrizione": "Restituisce i microsecondi trascorsi dall'avvio.",
+        "categoria": "Tempo"
+    },
+    "Serial.begin": {
+        "firma": "void Serial.begin(unsigned long baud)",
+        "descrizione": "Inizializza la comunicazione seriale al baud indicato.",
+        "categoria": "Seriale"
+    },
+    "Serial.print": {
+        "firma": "size_t Serial.print(valore)",
+        "descrizione": "Stampa un valore sulla seriale senza andare a capo.",
+        "categoria": "Seriale"
+    },
+    "Serial.println": {
+        "firma": "size_t Serial.println(valore)",
+        "descrizione": "Stampa un valore sulla seriale e va a capo.",
+        "categoria": "Seriale"
+    },
+    "Serial.available": {
+        "firma": "int Serial.available()",
+        "descrizione": "Numero di byte disponibili da leggere.",
+        "categoria": "Seriale"
+    },
+    "Serial.read": {
+        "firma": "int Serial.read()",
+        "descrizione": "Legge un byte dalla seriale (-1 se non disponibile).",
+        "categoria": "Seriale"
+    },
+    "Serial.write": {
+        "firma": "size_t Serial.write(byte dato)",
+        "descrizione": "Scrive un byte grezzo sulla seriale.",
+        "categoria": "Seriale"
+    },
+    "Serial.flush": {
+        "firma": "void Serial.flush()",
+        "descrizione": "Attende che i dati in uscita siano stati inviati.",
+        "categoria": "Seriale"
+    },
+    "map": {
+        "firma": "long map(long x, long in_min, long in_max, long out_min, long out_max)",
+        "descrizione": "Rimappa un valore da un intervallo a un altro.",
+        "categoria": "Matematica"
+    },
+    "constrain": {
+        "firma": "T constrain(T x, T min, T max)",
+        "descrizione": "Limita un valore tra min e max.",
+        "categoria": "Matematica"
+    },
+    "abs": {
+        "firma": "T abs(T x)",
+        "descrizione": "Restituisce il valore assoluto.",
+        "categoria": "Matematica"
+    },
+    "min": {
+        "firma": "T min(T a, T b)",
+        "descrizione": "Restituisce il minore tra due valori.",
+        "categoria": "Matematica"
+    },
+    "max": {
+        "firma": "T max(T a, T b)",
+        "descrizione": "Restituisce il maggiore tra due valori.",
+        "categoria": "Matematica"
+    },
+    "sqrt": {
+        "firma": "double sqrt(double x)",
+        "descrizione": "Restituisce la radice quadrata.",
+        "categoria": "Matematica"
+    },
+    "pow": {
+        "firma": "double pow(double base, double esponente)",
+        "descrizione": "Eleva base all'esponente.",
+        "categoria": "Matematica"
+    },
+    "random": {
+        "firma": "long random(long max)",
+        "descrizione": "Restituisce un numero pseudocasuale tra 0 e max.",
+        "categoria": "Matematica"
+    },
+    "randomSeed": {
+        "firma": "void randomSeed(unsigned long seed)",
+        "descrizione": "Inizializza il generatore di numeri casuali.",
+        "categoria": "Matematica"
+    },
+    "tone": {
+        "firma": "void tone(int pin, unsigned int frequenza)",
+        "descrizione": "Genera un tono a una data frequenza su un pin.",
+        "categoria": "Suono"
+    },
+    "noTone": {
+        "firma": "void noTone(int pin)",
+        "descrizione": "Interrompe il tono su un pin.",
+        "categoria": "Suono"
+    },
+    "pulseIn": {
+        "firma": "unsigned long pulseIn(int pin, int state)",
+        "descrizione": "Misura la durata di un impulso su un pin.",
+        "categoria": "I/O digitale"
+    },
+    "attachInterrupt": {
+        "firma": "void attachInterrupt(int pin, void (*func)(), int mode)",
+        "descrizione": "Collega una funzione a un interrupt esterno.",
+        "categoria": "Interrupt"
+    },
+    "detachInterrupt": {
+        "firma": "void detachInterrupt(int pin)",
+        "descrizione": "Scollega la funzione dall'interrupt.",
+        "categoria": "Interrupt"
+    },
+    "interrupts": {
+        "firma": "void interrupts()",
+        "descrizione": "Riabilita gli interrupt globali.",
+        "categoria": "Interrupt"
+    },
+    "noInterrupts": {
+        "firma": "void noInterrupts()",
+        "descrizione": "Disabilita gli interrupt globali.",
+        "categoria": "Interrupt"
+    },
+    "setup": {
+        "firma": "void setup()",
+        "descrizione": "Funzione chiamata una volta all'avvio.",
+        "categoria": "Struttura"
+    },
+    "loop": {
+        "firma": "void loop()",
+        "descrizione": "Funzione eseguita in loop dopo setup().",
+        "categoria": "Struttura"
+    },
+    "HIGH": {
+        "firma": "const int HIGH",
+        "descrizione": "Stato logico alto (1).",
+        "categoria": "Costanti"
+    },
+    "LOW": {
+        "firma": "const int LOW",
+        "descrizione": "Stato logico basso (0).",
+        "categoria": "Costanti"
+    },
+    "INPUT": {
+        "firma": "const int INPUT",
+        "descrizione": "Pin in ingresso (alta impedenza).",
+        "categoria": "Costanti"
+    },
+    "OUTPUT": {
+        "firma": "const int OUTPUT",
+        "descrizione": "Pin in uscita.",
+        "categoria": "Costanti"
+    },
+    "INPUT_PULLUP": {
+        "firma": "const int INPUT_PULLUP",
+        "descrizione": "Pin in ingresso con resistenza di pull-up interna.",
+        "categoria": "Costanti"
+    },
+    "LED_BUILTIN": {
+        "firma": "const int LED_BUILTIN",
+        "descrizione": "Numero del pin del LED integrato sulla scheda.",
+        "categoria": "Costanti"
+    },
+    "true": {
+        "firma": "const bool true",
+        "descrizione": "Valore booleano vero.",
+        "categoria": "Costanti"
+    },
+    "false": {
+        "firma": "const bool false",
+        "descrizione": "Valore booleano falso.",
+        "categoria": "Costanti"
+    },
+    "int": {
+        "firma": "int",
+        "descrizione": "Numero intero (tipicamente 16 o 32 bit).",
+        "categoria": "Tipi"
+    },
+    "long": {
+        "firma": "long",
+        "descrizione": "Numero intero a 32 bit.",
+        "categoria": "Tipi"
+    },
+    "unsigned long": {
+        "firma": "unsigned long",
+        "descrizione": "Intero a 32 bit senza segno.",
+        "categoria": "Tipi"
+    },
+    "float": {
+        "firma": "float",
+        "descrizione": "Numero in virgola mobile.",
+        "categoria": "Tipi"
+    },
+    "double": {
+        "firma": "double",
+        "descrizione": "Numero in virgola mobile a doppia precisione (32 bit su AVR).",
+        "categoria": "Tipi"
+    },
+    "boolean": {
+        "firma": "boolean",
+        "descrizione": "Alias di bool: true o false.",
+        "categoria": "Tipi"
+    },
+    "byte": {
+        "firma": "byte",
+        "descrizione": "Intero senza segno a 8 bit (0-255).",
+        "categoria": "Tipi"
+    },
+    "char": {
+        "firma": "char",
+        "descrizione": "Carattere singolo (1 byte).",
+        "categoria": "Tipi"
+    },
+    "String": {
+        "firma": "String",
+        "descrizione": "Classe per gestire stringhe di testo.",
+        "categoria": "Tipi"
+    },
+    "void": {
+        "firma": "void",
+        "descrizione": "Tipo di ritorno per funzioni che non restituiscono nulla.",
+        "categoria": "Tipi"
+    }
+}
