@@ -101,7 +101,7 @@ macos.permissions =
 mode = onefile
 
 # specify any extra nuitka arguments
-extra_args = --quiet --noinclude-qt-translations  --include-data-dir=src/arduedit/resources=arduedit/resources  --windows-icon-from-ico=src/arduedit/resources/image.ico
+extra_args = --quiet --noinclude-qt-translations  --include-data-dir=src/arduedit/resources=arduedit/resources  --windows-icon-from-ico=src/arduedit/resources/image.ico  --windows-console-mode=disable
 
 [buildozer]
 
